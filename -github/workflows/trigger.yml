@@ -15,4 +15,4 @@ jobs:
     steps:
       - name: Call API endpoint
         run: |
-          curl -X POST https://billtracker-cursor.onrender.com
+          curl -X POST https://billtracker-cursor.onrender.com/trigger
