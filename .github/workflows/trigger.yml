@@ -1,12 +1,10 @@
 name: Scheduled API Trigger
 
 on:
+  workflow_dispatch:   # ← 加這一行
   schedule:
-    # 台灣時間 8:00（UTC 0:00）
     - cron: '0 0 * * *'
-    # 台灣時間 17:00（UTC 9:00）
     - cron: '0 9 * * *'
-    # 台灣時間 21:00（UTC 13:00）
     - cron: '0 13 * * *'
 
 jobs:
